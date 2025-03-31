@@ -23,6 +23,11 @@
         "ROND" 0;
 }
 
+        :root {
+            --primary-text:  "Red Hat Text", sans-serif;
+            --secondary-text: "Doto", sans-serif;
+}
+
 
 
 /* ---- COLOR PALLETS ---- 
@@ -45,13 +50,23 @@
 
         */
 
+        :root {
+            --background-color: #1F1F1E;
+            --text-color: #FFFCFF;
+            --primary-color: #70A288;
+            --secondary-color: #D3CA52;
+            --other-color: #AFFDD1;
+
+            --backgroud-lighter: lighter(--background-color, 20%);
+          }
+
 
 /* ---- GENERAL ---- */
 
 
 body {
-    background-color: #1F1F1E;
-    font-family: "Red Hat Text", sans-serif;
+    background-color: var(--background-color);
+    font-family: var(--primary-text);
     position: relative;
     padding-bottom: 72.3px;
     min-height: 100vh;
@@ -77,7 +92,7 @@ footer {
 
 
 h1 {
-    color: #FFFCFF;
+    color: var(--text-color);
     font-family: "Red Hat Text", sans-serif;
     font-size: 60px;
     font-weight: 300;
@@ -85,8 +100,8 @@ h1 {
 }
 
 h2 {
-    color: #FFFCFF;
-    font-family: "Red Hat Text", sans-serif;
+    color: var(--text-color);
+    font-family: var(--primary-text);
     font-size: 30;
     font-weight: 300;
     margin: 10px;
@@ -94,16 +109,16 @@ h2 {
 }
 
 h3 {
-    color: #FFFCFF;
-    font-family: "Red Hat Text", sans-serif;
+    color: var(--text-color);
+    font-family: var(--primary-text);
     font-size: 20px;
     font-weight: 400;
     margin: 10px;
 }
 
 p {
-    color: #FFFCFF;
-    font-family: "Red Hat Text", sans-serif;
+    color: var(--text-color);
+    font-family: var(--primary-text);
     font-weight: 300;
     margin: 10px;
 }
@@ -111,59 +126,41 @@ p {
 /* LINKS STYLES */
 
 a {
-    color: #FFFCFF;
-    font-family: "Doto", sans-serif;
+    color: var(--text-color);
+    font-family: var(--secondary-text);
     text-decoration: none;
     position: relative;
 }
 
 
 a:visited {
-    color: #FFFCFF;
+    color: var(--text-color);
 }
 
 a:hover {
-    color: #70A288;
+    color: var(--primary-color);
     /* text-decoration: underline;
     text-decoration-thickness: 2px ;
     text-underline-offset: 5px;     */
 }
 
 a:active {
-    color: #AFFDD1;
+    color: var(--other-color);
 }
 
 /* BUTTON STYLES */
 
-button {
-    border-style: double;
-    font-family: "Doto", sans-serif;
-    background-color: #1F1F1E;
-    color: #70A288;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 8px;
-    padding: 20px;
-    border-color: #70A288;
-    margin: 10px;
-    -webkit-transition-property: opacity, -webkit-box-shadow;
-    transition-property: opacity, -webkit-box-shadow;
-    transition-property: opacity, box-shadow;
-    transition-property: opacity, box-shadow, -webkit-box-shadow;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-}
-
+button,
 .button {
     border-style: double;
-    font-family: "Doto", sans-serif;
-    background-color: #1F1F1E;
-    color: #70A288;
+    font-family: var(--secondary-text);
+    background-color: var(--background-color);
+    color: var(--primary-color);
     text-decoration: none;
     border: 2px solid;
     border-radius: 8px;
     padding: 20px;
-    border-color: #70A288;
+    border-color: var(--primary-color);
     margin: 10px;
     -webkit-transition-property: opacity, -webkit-box-shadow;
     transition-property: opacity, -webkit-box-shadow;
@@ -183,15 +180,10 @@ button:hover,
 }
 
 
-button:active {
-    background-color: #1F1F1E;
-    color: #AFFDD1;
-}
-
-
+button:active,
 .button:active {
-    background-color: #1F1F1E;
-    color: #AFFDD1;
+    background-color: var(--background-color);
+    color: var(--other-color);
 }
 
 
@@ -215,7 +207,7 @@ button:focus,
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 20px;
-    border-bottom: 1px dotted #70A288;
+    border-bottom: 1px dotted var(--primary-color);
     border-bottom-width: thin;
     border-bottom-right-radius: 10%;   
 }
@@ -240,24 +232,13 @@ button:focus,
     margin-right: 40px;
 }
 
-.page-header_item a:before{
+.page-header_item a:before, a:after{
     position: absolute;
     opacity: 0;
     width: 0%;
     height: 1px;
     content: '';
-    background:#70A288;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-a:after{
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 1px;
-    content: '';
-    background:#70A288;
+    background:var(--primary-color);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -417,15 +398,13 @@ a:after{
     -webkit-animation:fadeIn 0.6s ease-out forwards;
             animation:fadeIn 0.6s ease-out forwards;
     /* transition: transform 0.2s ease;  DOES NOT WORK */
+    -webkit-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    transition-property: box-shadow;
+    transition-property: box-shadow, -webkit-box-shadow;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
 }
-
-.grid_item a:hover {
-    color: #FFFCFF;
-    text-decoration: underline;
-    text-decoration-thickness: 0.5px ;
-    text-underline-offset: 5px;    
-}
-
 
 
 .grid_item:nth-child(1) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
@@ -438,9 +417,17 @@ a:after{
 
 .grid_item:hover {
     cursor: pointer;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); /* Slight scale-up */
+    -webkit-box-shadow: 0 0 10px 2px rgb(255, 255, 255) ;
+            box-shadow: 0 0 10px 2px rgb(255, 255, 255) ;
+   /* transform: scale(1.1);  Slight scale-up */
    
+}
+
+.grid_item a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px ;
+    text-underline-offset: 5px;    
 }
 
 
@@ -449,7 +436,7 @@ a:after{
 
 
 .standard-label {
-    color: #FFFCFF;
+    color: var(--text-color);
 }
 
 .contact_form_text {
@@ -473,11 +460,11 @@ a:after{
 }
 
 .submit-button {
-    font-family: "Doto", sans-serif;
+    font-family: var(--secondary-text);
     font-weight: 600;
     width: 150px;
-    color: #FFFCFF;
-    background-color: lighter(--background-color, 20%);
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin-top: 5px;
     -webkit-box-shadow: 0 0 10px 2px;
             box-shadow: 0 0 10px 2px;
@@ -485,7 +472,7 @@ a:after{
 }
 
 .submit-button:hover {
-    color: #70A288;
+    color: var(--primary-color);
 }
 
 ::-webkit-input-placeholder {
