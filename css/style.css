@@ -145,9 +145,6 @@ a:visited {
 
 a:hover {
     color: var(--primary-color);
-    /* text-decoration: underline;
-    text-decoration-thickness: 2px ;
-    text-underline-offset: 5px;     */
 }
 
 a:active {
@@ -271,7 +268,7 @@ button:focus,
     height: auto;
     margin-right: 50px;
     border-radius: 50%;
-  }
+}
 
 .index-text {
     text-align: left;
@@ -306,26 +303,25 @@ button:focus,
     line-height: 2;
 }
 
-.berlin-illustration {
+.space-image{
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
     text-align: center;
-    max-width: 700px;
-    max-height: 700px;
-    margin-top: 25px;
+    padding: 30px;
 }
 
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
+#Path_52{
+    animation: fadeIn 5s ; 
 }
 
-.cloud-front {
-    animation: 25s cloud-move infinite alternate linear;
+#Path_53{
+    animation: fadeIn 5s ;
 }
 
-.cloud-back {
-    animation: 30s cloud-move-reverse infinite alternate linear;
+#Path_51 {
+    animation: fadeIn2 10s;
 }
-
 
 /* ---- Work page ---- */
 
@@ -460,8 +456,8 @@ button:focus,
 }
 
 .social_media img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -497,38 +493,6 @@ button:focus,
     }
 }
 
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px)
-    }
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -537,6 +501,15 @@ button:focus,
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 
