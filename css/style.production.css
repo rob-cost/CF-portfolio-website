@@ -476,6 +476,7 @@ button:focus,
     border-radius: 10px;
     -webkit-box-shadow: 0 0 4px 1px;
             box-shadow: 0 0 4px 1px;
+    background-color: rgb(238, 238, 238);
 }
 
 #message {
@@ -489,13 +490,24 @@ button:focus,
     color: var(--text-color);
     background-color: var(--background-color);
     margin-top: 5px;
-    -webkit-box-shadow: 0 0 10px 2px;
-            box-shadow: 0 0 10px 2px;
-    padding: 8px;
+    border-color: var(--primary-color);
+    margin: 10px;
+    border-radius: 6px;
+    -webkit-transition-property: opacity, -webkit-box-shadow;
+    transition-property: opacity, -webkit-box-shadow;
+    transition-property: opacity, box-shadow;
+    transition-property: opacity, box-shadow, -webkit-box-shadow;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    padding: 15px;
 }
 
 .submit-button:hover {
     color: var(--primary-color);
+    opacity: 0.7;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px lightgreen;
+            box-shadow: 1px 1px lightgreen;
 }
 
 ::-webkit-input-placeholder {
