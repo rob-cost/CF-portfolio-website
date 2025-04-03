@@ -404,6 +404,7 @@ button:focus,
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 0 0 4px 1px;
+    background-color: rgb(238, 238, 238);
 }
 
 #message {
@@ -417,8 +418,13 @@ button:focus,
     color: var(--text-color);
     background-color: var(--background-color);
     margin-top: 5px;
-    box-shadow: 0 0 10px 2px;
-    padding: 8px;
+    border-color: var(--primary-color);
+    margin: 10px;
+    border-radius: 6px;
+    transition-property: opacity, box-shadow;
+    transition-duration: 0.3s;
+    /* box-shadow: 0 0 10px 2px; */
+    padding: 15px;
 }
 
 .submit-button:hover {
