@@ -1,6 +1,6 @@
-# Roberto Costantino's Portfolio
+# Portfolio Website
 
-Creation of a personal portfolio divided in different pages with a minimalistic style.
+Creation of a personal portfolio divided into different pages with a minimalistic style.
 
 ## Tech Stach
 - HTML
