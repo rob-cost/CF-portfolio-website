@@ -8,4 +8,4 @@ Creation of a personal portfolio divided into different pages with a minimalisti
 - Gh-Pages
 
 ## Link
-https://rob-cost.github.io/portfolio-website/
+https://rob-cost.github.io/CF-portfolio-website/
