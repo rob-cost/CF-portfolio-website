@@ -1,143 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
 
-        <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="img/portfolio.png" sizes="32x32" />
 
-        <link rel="icon" type="image/png" href="img/portfolio.png" sizes="32x32">
+    <!--Font from google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--Font from google font link-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
-            rel="stylesheet">
+    <!--Font from google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--Font from google font link-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
-            rel="stylesheet">
+    <!--Font from google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--Font from google font link-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" 
-            rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalise.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
+  <body>
+    <header class="page-header">
+      <!--Logo image-->
+      <div>
+        <img
+          class="logo-header"
+          src="img/logo-image.png"
+          alt="Logo image with the initial of my name R and C"
+        />
+      </div>
+      <div>
+        <!--Navigation section-->
+        <nav>
+          <ul class="page-header_item" role="menubar">
+            <!--Navigation links-->
+            <li role="presentation">
+              <a href="./index.html" role="menuitem"> Home </a>
+            </li>
+            <li role="presentation">
+              <a href="./about.html" role="menuitem"> Bio </a>
+            </li>
+            <li role="presentation">
+              <a href="./works.html" role="menuitem"> Work </a>
+            </li>
+            <li role="presentation">
+              <a href="./contact.html" role="menuitem"> Contact me </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main class="contact-page">
+      <div>
+        <div>
+          <h1>Get in touch</h1>
+        </div>
 
-        <link rel="stylesheet" type="text/css" href="css/normalise.css">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <!--Contact form-->
+        <div class="contact_form_text">
+          <form
+            action="https://formsubmit.co/robertocostantino3@gmail.com"
+            method="POST"
+            id="contact-form"
+            onsubmit="alert('Thanks for reaching out!')"
+          >
+            <label class="standard-label" for="contact-email"> E-mail: </label
+            ><br />
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              placeholder="Email"
+              required
+            />
+            <br />
+            <br />
 
+            <label class="standard-label" for="phone-number">
+              Phone Number: </label
+            ><br />
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              minlength="10"
+              maxlength="12"
+              placeholder="Eg: 1234567890"
+              required
+            />
+            <br />
+            <br />
 
-    </head>
+            <label class="standard-label" for="message"> Message: </label><br />
+            <textarea
+              maxlength="240"
+              id="message"
+              name="message"
+              placeholder="Type your message here ..."
+            ></textarea>
+            <br />
+            <br />
 
-    <body>
-        <header class="page-header">
-            <!--Logo image-->
-            <div>
-                <img class="logo-header" src="img/logo-image.png" alt="Logo image with the initial of my name R and C">
-            </div>
-            <div>    
-                <!--Navigation section-->
-                <nav>
-                    <ul class="page-header_item" role="menubar">
-                        <!--Navigation links-->
-                        <li role="presentation">
-                            <a href="./index.html" role="menuitem"> Home </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="./about.html" role="menuitem"> Bio </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="./works.html" role="menuitem"> Work </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="./contact.html" role="menuitem"> Contact me </a>
-                        </li>
+            <input class="submit-button" type="submit" value="send message" />
+          </form>
+        </div>
+      </div>
+      <br />
 
-                    </ul>
-                </nav>
-            </div>
-        </header>
+      <!--Contact social media-->
+      <div class="contact_social_text">
+        <nav>
+          <ul class="contact-social-link" role="form">
+            <li>
+              <a
+                href="mailto:robertocostantino3@gmail.com"
+                role="contact information"
+                >E-mail</a
+              >
+            </li>
+            <li>
+              <a href="tel:+4915237365411" role="contact information">Phone</a>
+            </li>
+            <li>
+              <a
+                href="https://www.skype.com/en/"
+                target="_blank"
+                role="contact information"
+                >Skype</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
 
-        <main class="contact-page">
-            <div>
-                <div>
-                    <h1>Get in touch</h1>
-                </div>
-
-                <!--Contact form-->
-                <div class="contact_form_text">
-                    <form action="/index.html" method="get" id="contact-form" onsubmit="alert('Thanks for reaching out!')">
-
-                        <label class="standard-label" for="contact-email"> E-mail: </label><br>
-                        <input type="email" id="contact-email" placeholder="Email" required>
-                        <br>
-                        <br>
-
-                        <label class="standard-label" for="phone-number" > Phone Number: </label><br>
-                        <input type="tel" id="phone-number" minlength="10"
-                            maxlength="12" placeholder="Eg: 1234567890" required>
-                        <br>
-                        <br>
-
-                        <label class="standard-label" for="message"> Message: </label><br>
-                        <textarea maxlength="240" id="message" placeholder="Type your message here ..."></textarea>
-                        <br>
-                        <br>
-
-                        <input class="submit-button" type="submit" value="send message">
-                    </form>
-                </div>
-            </div>
-            <br>
-            
-            <!--Contact social media-->
-            <div class="contact_social_text">
-                
-                <nav>
-                    <ul class="contact-social-link" role="form">
-                        <li>
-                            <a href="mailto:robertocostantino3@gmail.com" role="contact information">E-mail</a>
-                        </li>
-                        <li>
-                            <a href="tel:+4915237365411" role="contact information">Phone</a>
-                        </li>
-                        <li>
-                            <a href="https://www.skype.com/en/" target="_blank" role="contact information">Skype</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </main>
-
-        <footer class="page-footer">
-            
-            <div class="social_media">
-                <nav role="contentinfo">
-                    <a href="https://github.com/rob-cost" target="_blank" rel="norefferer" role="contentinfo">
-                        <img src="img/Git.svg" alt="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/roberto-costantino-916342131/" target="_blank" rel="norefferer"
-                        role="contentinfo">
-                        <img src="img/linkedin.svg" alt="linkedin">
-                    </a>
-                    <a href="https://x.com/i/flow/login" target="_blank" rel="norefferer" role="contentinfo">
-                        <img src="img/twitter.svg" alt="twitter">
-                    </a>
-                </nav>
-            </div>
-        </footer>
-        <script src="js/tota11y.mini.js"></script>
-    </body>
-
+    <footer class="page-footer">
+      <div class="social_media">
+        <nav role="contentinfo">
+          <a
+            href="https://github.com/rob-cost"
+            target="_blank"
+            rel="norefferer"
+            role="contentinfo"
+          >
+            <img src="img/Git.svg" alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/roberto-costantino-916342131/"
+            target="_blank"
+            rel="norefferer"
+            role="contentinfo"
+          >
+            <img src="img/linkedin.svg" alt="linkedin" />
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            target="_blank"
+            rel="norefferer"
+            role="contentinfo"
+          >
+            <img src="img/twitter.svg" alt="twitter" />
+          </a>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/tota11y.mini.js"></script>
+  </body>
 </html>
